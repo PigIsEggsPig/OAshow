@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>报销</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/global.css"/>
+		<link rel="stylesheet" href="css/reimburse.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div class="layer clearfix">
+				<h1 class="logo"><a href="index.html"><img src="images/logo.jpg"/></a></h1>
+				<div class="nav">
+					<ul class="nav-main">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="##">考勤</a></li>
+						<li><a href="message.html">消息中心</a><i class="red-ball"></i></li>
+						<li><a href="##">采购</a></li>
+						<li class="current"><a href="reimburse.html">审批管理</a></li>
+					</ul>
+					<div class="nav-line"></div>
+				</div>
+				
+				<div class="data-time">
+					<img src="images/sun.jpg">
+					<span> 杭州37℃  2015年7月30日 星期四</span>
+				</div>
+				
+				<div class="user">
+					<a class="user-img" href="baseinfo.html"><img src="images/user-img.png"/><i class="user-tri"></i></a>
+				</div>
+				
+			</div>
+		</div>
+		<p class="headerBottom"></p>
+		
+		<div class="layer reim-container">
+			<form class="reim-form">
+				<label>
+					<span class="reim-title">请示领导:</span>
+					<span class="reim-text">叶志根</span>
+				</label>
+				<label>
+					<span class="reim-title">申请人:</span>
+					<span class="reim-text">王炸</span>
+				</label>
+				<label>
+					<span class="reim-title">报销类型:</span>
+					<div class="reim-out">
+						<div class="reim-style">
+				        	<input type="hidden" value="">
+				    		<span></span>
+				    		<i class="reim-arrow"></i>
+					    </div>
+					    <ul class="reim-style-list" style="display: none;">
+					    	<li value="0"><a href="javascript:void(0);">00000</a></li>
+					        <li value="1"><a href="javascript:void(0);">11111</a></li>
+					        <li value="2"><a href="javascript:void(0);">22222</a></li>
+					    </ul>
+					</div>
+				</label>
+				<label>
+					<span class="reim-title">发生日期:</span>
+					<div class="reim-out happen-date">
+						<input class="J-date" type="text" value="2014-11-1" style="height: 28px;" readonly />
+						<i class="date-icon"></i>
+					</div>
+				</label>
+				<label>
+					<span class="reim-title">报销金额:</span>
+					<div class="reim-out">
+						<input type="text" value="30" style="height: 28px; ::-ms-clear;"/>
+					</div>
+				</label>
+				<label style="width: 554px;">
+					<span class="reim-title">上传金额:</span>
+					<div class="reim-out">
+						<input class="reim-file-img" type="file" value="选择文件">
+						<span class="reim-file-text">选择文件</span>
+					</div>
+					<span class="file-explain">限jpg,png,格式,图片清晰,单张小于2M</span>
+				</label>
+				<label>
+					<span class="reim-title">收款人账号:</span>
+					<div class="reim-out">
+						<div class="reim-style">
+				        	<input type="hidden" value="0">
+				    		<span></span>
+				    		<i class="reim-arrow"></i>
+					    </div>
+					    <ul class="reim-style-list" style="display: none;">
+					    	<li value="0"><a href="javascript:void(0);">00000</a></li>
+					        <li value="1"><a href="javascript:void(0);">11111</a></li>
+					        <li value="2"><a href="javascript:void(0);">22222</a></li>
+					    </ul>
+					</div>
+				</label>
+				<label class="reim-images" style="height: 50px;">
+					<span class="reim-title">&nbsp;</span>
+					<img src="images/reim-file.jpg" alt="" />
+					<img src="images/reim-file.jpg" alt="" />
+				</label>
+				<label style="margin:-24px 0 0 0;">
+					<span class="reim-title">&nbsp;</span>
+					<i class="add-icon"></i>
+					<span class="add-text">添加收账人账号</span>
+				</label>
+				<div class="reim-note">
+					<span class="reim-title">备注:</span>
+					<textarea class="reim-area"></textarea>
+				</div>
+				<div class="reim-btn">
+					<span class="reim-title">备注:</span>
+					<input class="reim-sub" type="submit" value="提交报销"/>
+				</div>
+			</form>
+		</div>
+		
+		<div class="layer reim-main">
+			<form class="reim-search">
+				<span class="reim-s-t">申请人:</span>
+				<input class="reim-s-i" type="text" />
+				<span class="reim-s-t">起止日期:</span>
+				<input class="reim-s-time J-date" type="text" value="2015-08-30"/>
+				<i class="reim-s-line">-</i>
+				<input class="reim-s-time J-date" type="text" value="2015-09-30"/>
+				<input class="reim-s-sub" type="submit" value="搜索"/>
+			</form>
+			<table class="reim-table">
+				<tr>
+					<th>申请人</th>
+					<th>发生日期</th>
+					<th>报销类型</th>
+					<th>数量</th>
+					<th>金额</th>
+					<th>审核状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>车费</td>
+					<td>1</td>
+					<td>30</td>
+					<td><span class="reim-red">同意</span></td>
+					<td>
+						<span class="reim-gray">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>车费</td>
+					<td>1</td>
+					<td>30</td>
+					<td><span class="reim-red">同意</span></td>
+					<td>
+						<span class="reim-gray">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>车费</td>
+					<td>2</td>
+					<td>30</td>
+					<td><span class="reim-red">同意</span></td>
+					<td>
+						<span class="reim-gray">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>车费</td>
+					<td>2</td>
+					<td>30</td>
+					<td><span class="reim-red">同意</span></td>
+					<td>
+						<span class="reim-gray">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>餐费</td>
+					<td>2</td>
+					<td>90</td>
+					<td>未审核</td>
+					<td>
+						<span class="reim-blue">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>活动经费</td>
+					<td>2</td>
+					<td>90</td>
+					<td>未审核</td>
+					<td>
+						<span class="reim-blue">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>差旅费</td>
+					<td>3</td>
+					<td>90</td>
+					<td>未审核</td>
+					<td>
+						<span class="reim-blue">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>差旅费</td>
+					<td>3</td>
+					<td>90</td>
+					<td>未审核</td>
+					<td>
+						<span class="reim-blue">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>王炸</td>
+					<td>2015/9/11</td>
+					<td>差旅费</td>
+					<td>3</td>
+					<td>90</td>
+					<td>未审核</td>
+					<td>
+						<span class="reim-blue">修改</span>
+						<span class="reim-gray">删除</span>
+					</td>
+				</tr>
+			</table>
+			<p class="conclusion">合计报销金额：<span>506.2元</span>已通过：<span>480.5元</span>未通过：<span>15.7元</span></p>
+		</div>
+		<div class="page">
+			<a href="##">上一页</a>
+		    <a href="##" class="page-cur">1</a>
+		    <a href="##">2</a>
+		   	<a href="##">3</a>
+		    <a href="##">4</a>
+		    <span>···</span>
+		    <a href="##">11</a>
+		    <a href="##">12</a>
+		    <a href="##">下一页</a>
+		</div>
+		
+		<div class="footer">
+			杭州全速网络技术有限公司　版本　2015V1.0
+		</div>
+	</body>
+	<!--<script type="text/javascript">
+		var scriptNode=document.createElement("script");
+		scriptNode.setAttribute("data-main","js/reimburse.js?v="+(new Date()));
+		scriptNode.src="js/lib/require.min.js";
+		document.body.appendChild(scriptNode);
+	</script>-->
+	<script data-main="js/reimburse.js" src="js/lib/require.min.js"></script>
+</html>

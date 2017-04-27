@@ -1,0 +1,100 @@
+﻿/*flash大图部分*/
+#flash{ position: relative; width: 100%; height: 511px; background: #fff; overflow: hidden;}
+#flash .layer{ position: relative; z-index: 2;}
+.flash-img{ position: absolute; z-index: 1; width: 2580px; height: 511px; top: 0; left: 50%; margin-left: -1280px;}
+.flash-img li{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+.flash-out{ width:100%; height: 23px; padding-top: 17px;}
+.flash-btn{ float: right; width: 147px; height: 23px;}
+.bg-btn{ position: relative; display: block; float: left; padding-left: 25px; width: 59px; height: 23px; line-height:23px; color:#ffffff; font-size:14px; background:url(../images/flash-btn.png) no-repeat; cursor: pointer;}
+.flash-left,.flash-right{ display: block; float: left; width: 21px; height: 22px; background: url(../images/flash-btn.png) no-repeat; text-indent: -99em; overflow: hidden; cursor: pointer;}
+.flash-left{ background-position: -94px 0px; margin-left: 10px;}
+.flash-right{ background-position: -122px 0px; margin-left: 7px;}
+.user-head{ width: 193px; height: 193px; border: 2px solid #dfe0e4; border-radius: 50%; margin: 118px auto 12px; padding: 4px;}
+.user-name{ font-size: 24px; line-height: 32px; color: #fff; text-align: center;}
+.user-name span{ position: relative;}
+.sex{ position: absolute; top: 7px; right: -24px; display: block; width: 16px; height: 16px; background: url(../images/sex.png) no-repeat;}
+.user-signature{ font-size: 15px; line-height: 20px; color: #fff; text-align: center;}
+.flash-nav{ position: absolute; left: -255px; top: 38px; width: 400px; height: 261px; filter:progid:DXImageTransform.Microsoft.gradient(enabled="true", startColorstr="#7F565656", endColorstr="#7F565656");
+background-color:rgba(86,86,86,0.5);}
+.flash-tri{ position: absolute; top:-14px; right: 98px; display: block; width: 0px; height: 0px; border-color: transparent transparent  rgba(86,86,86, 0.5) transparent; border-width: 7px; border-style: solid; }
+.bigX{ position: absolute; right: 14px; top: 11px; width: 15px; height: 15px; background: url(../images/x.png) no-repeat;}
+.flash-title{ padding-top: 18px; line-height: 18px; font-size: 14px; color: #ddd; text-align: center; font-weight: 500;}
+.flash-nav-main{ padding:19px 0 0 17px; height: auto;}
+.flash-nav-main li{ float: left; width: 59px; height: 92px; margin:0 17px 8px 0;}
+.flash-nav-main img{ display: block; width: 59px; height: 59px;}
+.flash-nav-main span{ display: block; width: 59px; height: 33px; text-align: center; line-height: 33px; color: #ddd;}
+
+/*中间导航部分*/
+.mid-nav{ height:191px; padding-top: 4px;}
+.mid-nav-main{ width:100%; height: auto;}
+.mid-nav-main li{ float: left; position: relative; width: 256px; height: 183px; color: #969696;}
+.mid-nav-main li:hover{ background: #3ea1ee;}
+.mid-text{ padding-top: 70px; text-align: center;}
+.mid-text dd{ line-height: 22px; font-size: 15px;} 
+.mid-text .mid-title{ margin-top: 9px; height: 22px; line-height: 22px; font-size: 20px;}
+.mid-line{ position: absolute; left: 0; top: 48px; width: 1px; height: 125px; background: #d8d8d8;}
+.mid-pic{ width: 50px; height: 42px; margin: 0 auto; background: url(../images/middle-icon.png) no-repeat;}
+.mid-pic01{ background-position: 0 0;}
+.mid-pic02{ background-position: 0 -48px;}
+.mid-pic03{ background-position: 0 -94px;}
+.mid-pic04{ background-position: 0 -144px;}
+.mid-pic05{ background-position: 0 -193px;}
+.mid-pic01-cur{ background-position: 0 -243px;}
+.mid-pic02-cur{ background-position: 0 -292px;}
+.mid-pic03-cur{ background-position: 0 -338px;}
+.mid-pic04-cur{ background-position: 0 -388px;}
+.mid-pic05-cur{ background-position: 0 -437px;}
+
+/*首页主体部分*/
+.index-main{ height: 660px; border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea; background: url(../images/main-bg.png) no-repeat top right #fff;}
+.main-name{ height: 42px; padding-top: 58px; font-weight: 500; line-height: 42px; text-align: center;}
+.main-big-name{ font-size: 28px; color: #3ea1ee; line-height: 42px;}
+.main-name-dis{ font-size: 18px; color: #545454;}
+.main-intime{ font-size: 18px; text-align: center; line-height: 38px;}
+.intime-days{ font-size: 21px; color: #3ea1ee;}
+
+/*三个图表*/
+.user-info{ padding:62px 0 0 106px;}
+.user-info li{ float: left; width: 256px; height: 310px;}
+.user-info-list{ width: 210px; height: 150px; line-height: 28px; text-align: center; padding-top: 60px; margin: 0 auto; background: url(../images/main-balls.png) no-repeat;  font-size: 18px;}
+.user-info-list dd{ color: #45e0ce;}
+.user-info-time{ font-size: 36px; line-height: 40px;}
+.user-down{ height: 44px; line-height: 44px; font-size: 18px; text-align: center;}
+.apply-add{ position: relative; display: block; width: 101px; height: 30px; line-height: 30px; color: #3ea1ee; margin: 0 auto; border: 1px solid #3ea1ee; border-radius: 30px; text-align: center;}
+.apply-add:hover{color: #3ea1ee; }
+.add-icon{ position: absolute; top:0px; right: -18px; font-size: 18px;}
+.user-info-02{ background-position: 0 -220px;}
+.user-info-02 dd{ color: #52a0f1;}
+.user-info-03{ background-position: 0 -440px;}
+.user-info-03 dd{ color: #776cef;}
+
+/*生日送祝福*/
+.birthday{ margin-top: 30px; width: 1200px; height:auto; margin: 0 auto;}
+.birth-title{ width: 100%; height: 29px; line-height: 29px; border-bottom: 1px solid #eee; color: #7d7d7d;}
+.wish{ float: left; font-size: 14px;  font-weight: bold; display: block; }
+.birth-more{ float: right; font-size: 12px; }
+.birth-list{ width: 1500px; height: 90px;}
+.birth-list li{ float: left; width: 200px; height: 71px; padding-top: 19px; margin-right: 12px;}
+.birth-list img{ float: left; display: block; width: 48px; height: 48px;}
+.birth-list p{ float: left; padding: 12px 0 0 9px; line-height: 16px; font-size: 12px; color: 595959;}
+.send-wish{ color: #3ea1ee; font-size: 12px; font-weight: bold;}
+
+/*公司信息*/
+.compeny-info{ height: 315px;  margin-top: 10px;}
+.com-left,.com-right{ position: relative; float: left; width: 595px; height: 313px; padding-left: 39px; border: 1px solid #EAEAEA; background: #fff;}
+.com-right{ float: right;}
+.com-title{ position: relative; padding: 15px 0 0 14px; width: 560px; height: 65px; line-height: 65px; font-weight: 500; border-bottom: 1px solid #ebebeb;}
+.com-title b{ font-size: 20px; color:#3ea1ee; font-weight: 500;}
+.com-title span{ font-size: 12px; color: #969696; margin-left: 6px;}
+.com-line{ position: absolute; top: 40px; left: 1px; display: block; width: 2px; height: 16px; background: #3ea1ee;}
+.com-list{ width: 100%; height: auto; padding-top:14px;}
+.com-list li{ height: 30px; line-height: 30px; font-size: 14px; color: #969696;}
+.com-list li:hover{ color: #3ea1ee;}
+.com-list li:hover a{ color: #3ea1ee;}
+.com-time{ display: block; float: right; margin-right: 36px;}
+.com-more{ position: absolute; right: 36px; bottom: 31px; display: block; width: 54px; height: 21px; line-height: 21px; border:1px solid #3ea1ee; border-radius: 15px; color: #3ea1ee; text-align: center;}
+.com-more:hover{ color: #3ea1ee;}
+
+/*footer*/
+#index-footer{ position: absolute; bottom: 0; left: 0; width: 100%; height: 60px; padding-top: 34px; margin-top: 65px; background: #e7e7e7;}
+#index-footer p{ line-height: 20px; font-size: 14px; color: #a8a8a8; text-align: center;}

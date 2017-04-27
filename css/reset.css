@@ -1,0 +1,10 @@
+﻿body, div, ul, li, dl, dt, dd, h1, h2, h3, h4, p, form, table, th, tr, td, a, img, input, strong, b, em, i, textarea, select, option{ margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: #969696;}
+a:hover { text-decoration: none; color: #969696;}
+img { border: 0 none; vertical-align: top;}
+.clearfix { *zoom: 1;}
+.clearfix:after { display: block; content: "."; height: 0; clear: both; visibility: hidden;}
+input::-ms-clear{display: none;} /*删除ie下input右边的叉叉*/
+table{ border-collapse: collapse; border-spacing: 0; }
+body{ position: relative; min-width: 1280px; min-height: 1800px; padding-bottom: 150px; font-size: 14px; font-family:微软雅黑; color: #969696; background: #f1f1f1;}

@@ -1,0 +1,161 @@
+.jz {
+  margin: 0 auto;
+}
+.headerBottom {
+  width: 100%;
+  height: 1px;
+  background: #dfdfdf;
+}
+.main {
+  height: auto;
+  margin-top: 51px;
+  padding: 61px 60px 0 52px;
+  background: #FFFFFF;
+  border: 1px solid #dcdcdc;
+}
+.main-title {
+  position: relative;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 30px;
+  font-size: 21px;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+.main-title .m-t-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 11px;
+  background: #4f9cee;
+}
+.main-title .m-t-line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 1040px;
+  height: 1px;
+  background: #e5e5e5;
+}
+.main-content {
+  height: auto;
+  margin-top: 41px;
+  padding-bottom: 36px;
+}
+.main-content .main-list {
+  width: 100%;
+  height: auto;
+}
+.main-content .main-list li {
+  position: relative;
+  padding: 18px 0 20px 77px;
+  height: auto;
+  border-bottom: 1px dashed #d0d0d0;
+  color: #4a4a4a;
+}
+.main-content .main-list li dl {
+  width: 1072px;
+  line-height: 30px;
+}
+.main-content .main-list li dl dt {
+  position: relative;
+  float: left;
+  font-size: 16px;
+}
+.main-content .main-list li dl dt .mess-icon {
+  position: absolute;
+  top: 7px;
+  right: -20px;
+  display: block;
+  width: 13px;
+  height: 15px;
+  background: url(../images/mess-icon.png) no-repeat;
+}
+.main-content .main-list li dl dd {
+  width: 992px;
+  height: 30px;
+  clear: both;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-content .main-list li .mess-bg {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/mess-bg.png) no-repeat;
+}
+.main-content .main-list li .mess-time {
+  position: absolute;
+  right: 0;
+  top: 29px;
+  font-size: 12px;
+}
+.hideText {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  display: block;
+  width: 35px;
+  height: 20px;
+  padding-left: 45px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4f9cee;
+  background: url(../images/show-hide.png) no-repeat 0 -20px;
+}
+.showText {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  display: block;
+  width: 35px;
+  height: 20px;
+  padding-left: 45px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4f9cee;
+  background: url(../images/show-hide.png) no-repeat 0 -20px;
+  background: url(../images/show-hide.png) no-repeat;
+  width: 80px;
+  padding-left: 0px;
+  bottom: 25px;
+}
+.hideText:hover,
+.showText:hover {
+  color: #4f9cee;
+}
+.page {
+  margin-top: 31px;
+  text-align: center;
+}
+.page a {
+  background: #fff;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  border: 1px solid #e2e2e2;
+  display: inline-block;
+  margin-left: 0px;
+}
+.page span {
+  margin: 0 8px 0 8px;
+}
+.page a:hover,
+.page .page-cur {
+  color: #fff;
+  background: #00a7ea;
+  border: 1px solid #00a7ea;
+}
+.headerBottom {
+  width: 100%;
+  height: 1px;
+  background: #dfdfdf;
+}
